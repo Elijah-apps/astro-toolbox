@@ -19,7 +19,9 @@
     "typescript": "^5.4.4"
   },
   "dependencies": {
+    "animejs": "^3.2.2",
     "astro": "^4.5.18",
-    "cypress": "^13.7.2"
+    "cypress": "^13.7.2",
+    "three": "^0.163.0"
   }
 }
