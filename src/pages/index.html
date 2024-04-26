@@ -10,6 +10,7 @@
  <meta name="keywords" content="Elijah Ekpen Mensah- Senior Principal Software Engineer">
  <meta name="description" content="Elijah Ekpen Mensah-Portfolio Website">
  <meta name="author" content="Elijah Ekpen Mensah">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js" integrity="sha512-fo6X5UXaTRf/mHuTYJBR3Q/rpPa+LB2KUyDMROluMkZnfEEF4DhQyI5AHRoAe/zzu1Ty58MMmZXG4SuVEpXsng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
  <!-- Title  -->
  <title>Elijah Ekpen Mensah</title>
@@ -247,7 +248,7 @@
                                 </div>
                                 <div class="author-info">
                                     <div class="text-center">
-                                        <span class="main-color sub-title mb-10">SENIOR PRINCIPAL SOFTWARE ENGINEER</span>
+                                        <span id="jobTitle" class="main-color sub-title mb-10">SENIOR PRINCIPAL SOFTWARE ENGINEER</span>
                                         <h6 class="fw-500">Hi, I'm Elijah E. Mensah</h6>
                                     </div>
                                     <div class="social mt-20">
@@ -294,15 +295,14 @@
                                                 <b class="is-visible">I'm Elijah E. Mensah</b>
                                                 <b>I'm Principal Software Engineer</b>
                                                 <b>I Do Web Developement</b>
-                                                <b>I Do Mobile App evelopement</b>
+                                                <b>I Do Mobile App Developement</b>
                                                 <b>I Do Desktop App Developement</b>
+                                                <b>I Do AI Service Integration </b>
                                                 <b>I Do Web3 DApp Developement</b>
                                             </span>
                                         </h5>
-                                        <h1>I’m a  Senior <span class="bord">Principal Software Engineer</span>
-                                            Based
-                                            in
-                                            Nigeria.</h1>
+                                        <h1>I’m a  Senior <span id="" class="bord">Principal Software Engineer</span>
+                                           </h1>
                                         <p class="text">I've done remote work for agencies, consulted for startups, and
                                             collaborated
                                             with talented people to create digital products for both business and
@@ -1607,6 +1607,33 @@
 
     <!-- custom scripts -->
     <script src="../../andrew/assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js" integrity="sha512-fo6X5UXaTRf/mHuTYJBR3Q/rpPa+LB2KUyDMROluMkZnfEEF4DhQyI5AHRoAe/zzu1Ty58MMmZXG4SuVEpXsng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+var app = document.getElementById('jobTitle');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(2500)
+  .typeString('Principal Software Engineer')
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString('<strong>That Means</strong>')
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString('<strong>Full Stack + App Dev</strong>')
+  .deleteAll()
+  .typeString('<strong>Web3 + AI Integrator</strong>')
+  .pauseFor(1000)
+  .start();
+
+
+
+</script>
 
 </body>
 
