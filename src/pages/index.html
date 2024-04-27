@@ -271,10 +271,10 @@
                                     </div>
                                 </div>
                                 <div class="butns mt-30">
-                                    <a href="#0" class="inf-butn" data-scroll-nav="4">
+                                    <a href="#contact" class="inf-butn" data-scroll-nav="4">
                                         <span>Contact Us</span>
                                     </a>
-                                    <a href="#0" class="inf-butn">
+                                    <a id="openModal" href="#0" class="inf-butn">
                                         <span>Download Resume </span>
                                     </a>
                                 </div>
@@ -288,7 +288,13 @@
 
                         <div class="sec-box" data-scroll-index="0">
 
-                            <div class="bg"></div>
+                            <div class="bg">
+
+<div id="container3D"></div>
+
+
+
+
 
                             <div class="content-box">
 
@@ -811,14 +817,14 @@
 
 
 
-
+<!-- 
                         <div class="sec-box" data-scroll-index="2">
 
                             <div class="bg"></div>
 
                             <div class="content-box">
 
-                                <!-- ==================== Open Source Project ==================== -->
+                                <!-- ==================== Open Source Project ====================  
 
                                 <div class="portfolio">
                                     <div class="sec-head mb-40 wow fadeInUp">
@@ -1002,13 +1008,13 @@
                                     </div>
                                 </div>
 
-                                <!-- ==================== End portfolio ==================== -->
+                                
 
 
                             </div>
 
                         </div>
-
+ -->
 
 
 
@@ -1330,7 +1336,7 @@
 
                                 <!-- ==================== Start Contact ==================== -->
 
-                                <div class="contact">
+                                <div id="contact" class="contact">
                                     <div class="sec-head mb-80 wow fadeInUp">
                                         <div class="d-inline-block">
                                             <div class="sub-title-icon d-flex align-items-center">
@@ -1509,9 +1515,36 @@
 
 </script>
 
+<script src="https://cdn.tailwindcss.com"></script>
 
 
+  <!-- Modal -->
+  <div id="modal" style="z-index: 90000;" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 hidden">
+    <div class="bg-white p-6 rounded-lg w-80">
+      <div class="flex justify-between items-center">
+        <h2 class="text-lg font-semibold">Modal Title</h2>
+        <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <p class="mt-4">Modal Content Here</p>
+    </div>
+  </div>
 
+  <script>
+    const openModal = document.getElementById('openModal');
+    const closeModal = document.getElementById('closeModal');
+    const modal = document.getElementById('modal');
+
+    openModal.addEventListener('click', function() {
+      modal.classList.remove('hidden');
+    });
+
+    closeModal.addEventListener('click', function() {
+      modal.classList.add('hidden');
+    });
+  </script>
+<script type="module" src="../../main.js"></script>
 
 
     
