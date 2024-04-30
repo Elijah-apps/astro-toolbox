@@ -274,7 +274,7 @@
                                     <a href="#contact" class="inf-butn" data-scroll-nav="4">
                                         <span>Contact Us</span>
                                     </a>
-                                    <a id="openModal" href="#0" class="inf-butn">
+                                    <a base="_blank" href="https://docs.google.com/document/d/1hsccZMnyvdN_z2neZ_GxpsPPopeoCW0SRR7LFYzQtH0/edit?usp=sharing" class="inf-butn">
                                         <span>Download Resume </span>
                                     </a>
                                 </div>
@@ -1235,85 +1235,7 @@
 
                         </div>
 
-
-                        <div class="sec-box">
-
-                            <div class="bg"></div>
-
-                            <div class="content-box">
-
-                                <!-- ==================== Start Resume ==================== -->
-
-                                <div class="resume">
-                                    <div class="sec-head mb-80 wow fadeInUp">
-                                        <div class="d-inline-block">
-                                            <div class="sub-title-icon d-flex align-items-center">
-                                                <span class="icon pe-7s-note2"></span>
-                                                <h6>My Resume</h6>
-                                            </div>
-                                        </div>
-                                        <h3>Education & Experience</h3>
-                                    </div>
-
-                                    <div class="wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="resume-swiper2" data-carousel="swiper" data-space="50" data-speed="1000">
-                                            <div id="content-carousel-container-unq-resume" class="swiper-container" data-swiper="container">
-                                                <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">
-                                                        <div class="item text-center">
-                                                            <h6 class="main-color date fz-15 mb-60">2021 - Present</h6>
-                                                            <h5>Framer Designer & Developer</h5>
-                                                            <span class="opacity-8 fw-500 mt-10">[ at Ui-Themez ]</span>
-                                                            <p class="fz-13 mt-15">Crafting captivating digital
-                                                                experiences that put users at the heart of the design.
-                                                                Elevate your product to increased user satisfaction and
-                                                                loyalty.</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <div class="item text-center">
-                                                            <h6 class="main-color date fz-15 mb-60">2018 - 2020</h6>
-                                                            <h5>Front-End WordPress Developer</h5>
-                                                            <span class="opacity-8 fw-500 mt-10">[ at Ui-Themez ]</span>
-                                                            <p class="fz-13 mt-15">Crafting captivating digital
-                                                                experiences that put users at the heart of the design.
-                                                                Elevate your product to increased user satisfaction and
-                                                                loyalty.</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <div class="item text-center">
-                                                            <h6 class="main-color date fz-15 mb-60">2015 - 2017</h6>
-                                                            <h5>Web Designer</h5>
-                                                            <span class="opacity-8 fw-500 mt-10">[ at Envato Market
-                                                                ]</span>
-                                                            <p class="fz-13 mt-15">Crafting captivating digital
-                                                                experiences that put users at the heart of the design.
-                                                                Elevate your product to increased user satisfaction and
-                                                                loyalty.</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <div class="item text-center">
-                                                            <h6 class="main-color date fz-15 mb-60">2010 - 2014</h6>
-                                                            <h5>Bachelor's Degree in Design</h5>
-                                                            <span class="opacity-8 fw-500 mt-10">[ US RMIT University
-                                                                ]</span>
-                                                            <p class="fz-13 mt-15">Crafting captivating digital
-                                                                experiences that put users at the heart of the design.
-                                                                Elevate your product to increased user satisfaction and
-                                                                loyalty.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-pagination"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- ==================== End Resume ==================== -->
-
+ 
                             </div>
 
                         </div>
@@ -1511,10 +1433,9 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 
-
-  <!-- Modal -->
-  <div id="modal" style="z-index: 90000;" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 hidden">
-    <div class="bg-white p-6 rounded-lg w-80">
+ <!-- Modal -->
+<div id="OpenModal" style="z-index: 90000;" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 opacity-0 pointer-events-none">
+    <div class="bg-white p-6 rounded-lg max-w-xl w-full text-black">
       <div class="flex justify-between items-center">
         <h2 class="text-lg font-semibold">Modal Title</h2>
         <button id="closeModal" class="text-gray-500 hover:text-gray-700">
@@ -1522,8 +1443,14 @@
         </button>
       </div>
       <p class="mt-4">Modal Content Here</p>
+      <ul class="mt-4">
+        <li class="py-2">List item 1</li>
+        <li class="py-2">List item 2</li>
+        <li class="py-2">List item 3</li>
+      </ul>
     </div>
   </div>
+  
 
   <script>
     const openModal = document.getElementById('openModal');
